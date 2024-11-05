@@ -10,10 +10,9 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
-	"io"
+	"io/ioutil"
 	"net/http"
 	"net/url"
-	"os"
 	"strings"
 	"sync"
 	"time"
@@ -243,7 +242,7 @@ func (c *Client) LoadAppCertPublicKey(s string) error {
 
 // LoadAppCertPublicKeyFromFile 从文件加载应用公钥证书
 func (c *Client) LoadAppCertPublicKeyFromFile(filename string) error {
-	b, err := os.ReadFile(filename)
+	b, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return err
 	}
@@ -289,7 +288,7 @@ func (c *Client) LoadAlipayCertPublicKey(s string) error {
 
 // LoadAlipayCertPublicKeyFromFile 从文件支付宝公钥证书
 func (c *Client) LoadAlipayCertPublicKeyFromFile(filename string) error {
-	b, err := os.ReadFile(filename)
+	b, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return err
 	}
@@ -314,7 +313,7 @@ func (c *Client) LoadAliPayRootCert(s string) error {
 
 // LoadAliPayRootCertFromFile 加载支付宝根证书
 func (c *Client) LoadAliPayRootCertFromFile(filename string) error {
-	b, err := os.ReadFile(filename)
+	b, err := ioutil.ReadFile(filename)
 
 	if err != nil {
 		return err
@@ -393,7 +392,7 @@ func (c *Client) doRequest(ctx context.Context, method string, param Param, resu
 	}
 	defer rsp.Body.Close()
 
-	bodyBytes, err := io.ReadAll(rsp.Body)
+	bodyBytes, err := ioutil.ReadAll(rsp.Body)
 	if err != nil {
 		return err
 	}

@@ -1,9 +1,9 @@
-module github.com/smartwalle/alipay/v3
+module github.com/A-little-imagination/alipay/v3
 
-go 1.18
+go 1.13
 
 require (
-	github.com/smartwalle/ncrypto v1.0.4
-	github.com/smartwalle/ngx v1.0.9
-	github.com/smartwalle/nsign v1.0.9
+	github.com/A-little-imagination/ncrypto v1.0.4
+	github.com/A-little-imagination/ngx v1.0.9
+	github.com/A-little-imagination/nsign v1.0.9
 )

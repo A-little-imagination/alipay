@@ -3,8 +3,6 @@ package alipay_test
 import (
 	"context"
 	"testing"
-
-	"github.com/smartwalle/alipay/v3"
 )
 
 func TestClient_BillDownloadURLQuery(t *testing.T) {

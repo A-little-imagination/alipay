@@ -6,8 +6,6 @@ import (
 	"log"
 	"os"
 	"testing"
-
-	"github.com/smartwalle/alipay/v3"
 )
 
 var (

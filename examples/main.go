@@ -6,8 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/smartwalle/alipay/v3"
-	"github.com/smartwalle/xid"
+	"github.com/A-little-imagination/xid"
 )
 
 var client *alipay.Client

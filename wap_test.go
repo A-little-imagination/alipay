@@ -2,8 +2,6 @@ package alipay_test
 
 import (
 	"testing"
-
-	"github.com/smartwalle/alipay/v3"
 )
 
 func TestClient_TradeWapPay(t *testing.T) {

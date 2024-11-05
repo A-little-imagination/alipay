@@ -18,9 +18,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/smartwalle/ncrypto"
-	"github.com/smartwalle/ngx"
-	"github.com/smartwalle/nsign"
+	"github.com/A-little-imagination/ncrypto"
+	"github.com/A-little-imagination/ngx"
+	"github.com/A-little-imagination/nsign"
 )
 
 var (

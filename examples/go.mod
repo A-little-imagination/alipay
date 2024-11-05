@@ -1,12 +1,12 @@
-module github.com/smartwalle/alipay/examples
+module github.com/A-little-imagination/alipay/examples
 
 go 1.18
 
 require (
-	github.com/smartwalle/alipay/v3 v3.2.16
-	github.com/smartwalle/xid v1.0.7
+	github.com/A-little-imagination/alipay/v3 v3.2.16
+	github.com/A-little-imagination/xid v1.0.7
 )
 
-require github.com/smartwalle/ncrypto v1.0.4 // indirect
+require github.com/A-little-imagination/ncrypto v1.0.4 // indirect
 
-replace github.com/smartwalle/alipay/v3 => ../
+replace github.com/A-little-imagination/alipay/v3 => ../

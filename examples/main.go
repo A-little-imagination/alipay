@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/A-little-imagination/alipay/v3"
+	"github.com/smartwalle/xid"
 	"log"
 	"net/http"
-
-	"github.com/A-little-imagination/xid"
 )
 
 var client *alipay.Client
